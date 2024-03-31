@@ -1,0 +1,127 @@
+/*# sourceMappingURL=estilos.css.map*/
+
+  /*VARIABLES*/
+$main_black: #222222;
+$secondary_black: #252525;
+$white: #fff;
+$red: #ff164b;
+$font1: "Roboto", sans-serif;
+$font2: "Helvetica Neue", sans-serif;
+$font3: "Raleway", sans-serif;
+
+  /*FORMATO*/
+    @import "_formato.scss";
+
+  /*FONTS*/
+    @import "_fonts.scss";
+  
+  /*NAV*/
+    @import "_nav.scss";
+  
+  /*HOME*/
+  @import "_home-cards.scss";
+ 
+  /*WORK*/
+  .text-start {
+    color: $white;
+    font-weight: 100;
+    font-size: calc(10px + 0.5vw);
+  }
+
+  /*STAFF*/
+  @import "_director-cards.scss";
+  
+  /*SOBRE NOSOTROS*/
+  @import "_sobre-nosotros.scss";
+  
+  
+  /*CONTACTO*/
+  .h1-custom {
+    font-size: calc(25px + 1.0vw);
+    font-family: 'Roboto', sans-serif;
+    font-weight:300;
+    color: $white;
+    margin-top: 30px;
+  }
+  
+  .card {
+    background-color: $secondary_black;
+    border: $white;
+  }
+  
+  .card {
+    h5,
+    p,
+    a {
+    color: $white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    }
+  }
+  
+  /*Form*/
+  
+  .main-title {
+    h1 {
+        text-transform: uppercase;  
+      }
+  }
+  
+  .form-control {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+
+  /*BOTÓN PRIMARIO*/
+  @import 'extends'; 
+  .btn-custom {
+    @extend %btn-custom-properties;
+  }
+  
+  /*FOOTER*/
+  @import "_footer.scss";
+  
+  /*Centrar footer en pantallas más pequeñas*/
+  @media (max-width: 768px) {
+  .f2_wrap, .f3_wrap {
+    width: 100%;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .f2, .f3 {
+    width: 100%;
+    float: none;
+    padding-right: 0;
+    margin-bottom: 30px;
+  }
+}
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
